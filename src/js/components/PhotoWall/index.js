@@ -6,6 +6,7 @@ import { componentDidMount } from "react-functional-lifecycle";
 // mapStateToProps :: State -> Props
 const mapStateToProps = (state) => ({
   data: state.api.photos,
+  isLoading: state.api.isLoading,
 });
 
 // mapDispatchToProps :: Dispatch -> Props

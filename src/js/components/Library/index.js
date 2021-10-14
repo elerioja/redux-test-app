@@ -1,6 +1,5 @@
 import { connect } from "react-redux";
 import Library from "./Library";
-import { actions } from "../../redux/libraryState";
 import { componentDidMount } from "react-functional-lifecycle";
 
 // mapStateToProps :: State -> Props
@@ -9,7 +8,7 @@ const mapStateToProps = (state) => ({
 });
 
 // mapDispatchToProps :: Dispatch -> Props
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = () => ({
   updateLibrary: () => {},
 });
 

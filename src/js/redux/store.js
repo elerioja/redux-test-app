@@ -1,6 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { reducer as libraryState } from "../redux/libraryState";
 import { reducer as apiState } from "../redux/apiState";
+
 import { createEpicMiddleware } from "redux-observable";
 import createFetchApi from "../fetch/fetchApi";
 import config from "../config";
@@ -11,7 +12,7 @@ export default function createStore() {
 
   const epicMiddleware = createEpicMiddleware({
     dependencies: {
-      fetchApi: () => fetchApiWithBaseConfig(),
+      fetchApi: (searchQuery) => fetchApiWithBaseConfig(searchQuery),
     },
   });
 
