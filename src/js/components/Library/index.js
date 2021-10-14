@@ -5,12 +5,12 @@ import { componentDidMount } from "react-functional-lifecycle";
 
 // mapStateToProps :: State -> Props
 const mapStateToProps = (state) => ({
-  data: state.library.current,
+  data: state.library.photos,
 });
 
 // mapDispatchToProps :: Dispatch -> Props
 const mapDispatchToProps = (dispatch) => ({
-  updateLibrary: () => dispatch(actions.updateLibrary()),
+  updateLibrary: () => {},
 });
 
 // didMount :: Props -> Action

@@ -5,7 +5,7 @@ import { componentDidMount } from "react-functional-lifecycle";
 
 // mapStateToProps :: State -> Props
 const mapStateToProps = (state) => ({
-  data: null, //fetch items via api
+  data: state.api.photos,
 });
 
 // mapDispatchToProps :: Dispatch -> Props

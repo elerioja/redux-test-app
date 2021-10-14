@@ -13,15 +13,16 @@
   }
 }
 
-.App-header {
+body {
+  min-width: 320px;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.6;
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-x: hidden;
+  padding: 60px 120px;
 }
 
 @keyframes spinner {
@@ -32,3 +33,8 @@
     transform: rotate(360deg);
   }
 }
+
+@import "./photo.css";
+@import "./photo_wall_container.css";
+@import "./library_container.css";
+@import "./photo.css";

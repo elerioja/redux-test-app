@@ -3,16 +3,15 @@ import { createSlice } from "@reduxjs/toolkit";
 const { actions, reducer } = createSlice({
   name: "api",
   initialState: {
-    current: [],
+    photos: [],
     isLoading: false,
   },
   reducers: {
-    fetchPhotos(state, { payload }) {
-      state.current = payload;
+    fetchPhotos(state) {
       state.isLoading = true;
     },
     photosReceived(state, { payload }) {
-      state.current = payload;
+      state.photos = payload.photos;
       state.isLoading = false;
     },
   },

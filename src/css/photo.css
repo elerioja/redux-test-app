@@ -1,0 +1,28 @@
+.photo-container {
+  display: flex;
+  gap: 10px 20px;
+  row-gap: 10px;
+  column-gap: 20px;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.like-button {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+}
+
+.like-button.liked {
+  fill: red;
+}
+
+.like-button {
+  cursor: pointer;
+  fill: white;
+}

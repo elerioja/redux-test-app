@@ -1,4 +1,4 @@
 import { combineEpics } from "redux-observable";
-import apiState from "./apiState";
+import api from "./api";
 
-export default combineEpics(apiState);
+export default combineEpics(api);
